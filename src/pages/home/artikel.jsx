@@ -94,7 +94,7 @@ export default class Artikel extends Component{
                             articles.map((artikel) => (
                                 <div className="col-xl-3 col-md-6 d-flex align-items-stretch">
                                     <div className="card border-0 card-car" style={{width: '18rem'}}>
-                                        <a href="#">
+                                        <a href="/#">
                                             <img src={artikel.imageSrc} className="card-img-top" alt={artikel.alt}/>
                                             <div className="card-body">
                                                 <h6>{artikel.title}</h6>
@@ -110,7 +110,7 @@ export default class Artikel extends Component{
                         <div className="col-xl-12">
                             <div className="d-flex justify-content-center align-items-center mt-4">
                             <div className="mx-auto my-auto">         
-                                <a href="#">
+                                <a href="/#">
                                 <svg className="svg-right-arrow fs-3 text bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                                 </svg><span>Selengkapnya...</span>

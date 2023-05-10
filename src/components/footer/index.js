@@ -3,12 +3,6 @@ import { InstagramLogo, TwitterLogo, WaLogo, YoutubeLogo } from "../../asset/img
 
 export default class Footer extends Component{
     render(){
-        const socialMedia2 = [
-            TwitterLogo,
-            YoutubeLogo,
-            WaLogo,
-            InstagramLogo
-        ]
         const socialMedia = [
             {
                 image: TwitterLogo,
@@ -67,8 +61,8 @@ export default class Footer extends Component{
                         {
                             socialMedia.map((sm) => (
                                 <li className="flex-fill" key={sm.alt}>
-                                    <a href="#">
-                                        <img src={sm.image} alt={sm.alt} srcSet=""/>
+                                    <a href="/#">
+                                        <img src={sm.image} alt={sm.alt}/>
                                     </a>
                                 </li>
                             ))
