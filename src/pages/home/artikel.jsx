@@ -6,18 +6,21 @@ export default class Artikel extends Component{
     render(){
         const carouselArticle = [
             {
+                id:2,
                 imageSrc:Artikel2,
                 alt:'Article Image',
-                title:"Pantau Pergerakan Harga Saham",
+                title:"Pentingnya Memahami Manajemen Resiko Investasi",
                 tag:"Saham",
                 date:"10 Mei 2023"
             },{
+                id:4,
                 imageSrc:Artikel4,
                 alt:'Article Image',
-                title:"Pentingnya Memahami Manajemen Risiki Investasi",
+                title:"Risiko & Tips Membeli Saham saat Cum Date Dividen",
                 tag:"Investasi",
                 date:"10 Mei 2023"
             },{
+                id:3,
                 imageSrc:Artikel3,
                 alt:'Article Image',
                 title:"Daftar Saham Blue Chip, harga 1 slot dibawah Rp1juta?",
@@ -28,27 +31,31 @@ export default class Artikel extends Component{
 
         const articles = [
             {
+                id:1,
                 imageSrc:Artikel1,
                 alt:'Article Image',
-                title:"Pantau Pergerakan Harga Saham",
+                title:"Mekanisme Transaksi Saat Pre Opening Pasar Saham",
                 tag:"Saham",
-                date:"10 Mei 2023"
+                date:"10 Mei 2023",
             },{
+                id:2,
                 imageSrc:Artikel2,
                 alt:'Article Image',
-                title:"Pentingnya Memahami Manajemen Risiki Investasi",
+                title:"Pentingnya Memahami Manajemen Resiko Investasi",
                 tag:"Investasi",
-                date:"10 Mei 2023"
+                date:"10 Mei 2023",
             },{
+                id:3,
                 imageSrc:Artikel3,
                 alt:'Article Image',
                 title:"Daftar Saham Blue Chip, harga 1 slot dibawah Rp1juta?",
                 tag:"Saham",
                 date:"10 Mei 2023"
             },{
+                id:4,
                 imageSrc:Artikel4,
                 alt:'Article Image',
-                title:"Faktor Penyebab Harga Saham Turun, Investor Wajib Tahu",
+                title:"Risiko & Tips Membeli Saham saat Cum Date Dividen",
                 tag:"Saham",
                 date:"10 Mei 2023"
             }
@@ -61,26 +68,26 @@ export default class Artikel extends Component{
                     <h2>Artikel Pilihan untuk Anda</h2>
                     </div>
 
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+                        <div className="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
+                        <div className="carousel-inner">
                         {
                             carouselArticle.map((artikel,index) => (
                                 <CarouselItem artikel={artikel} index={index}/>
                             ))
                         }
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="visually-hidden">Next</span>
                         </button>
                         </div>
 
@@ -94,7 +101,7 @@ export default class Artikel extends Component{
                             articles.map((artikel) => (
                                 <div className="col-xl-3 col-md-6 d-flex align-items-stretch">
                                     <div className="card border-0 card-car" style={{width: '18rem'}}>
-                                        <a href="/#">
+                                        <a href={"/artikel/"+artikel.id}>
                                             <img src={artikel.imageSrc} className="card-img-top" alt={artikel.alt}/>
                                             <div className="card-body">
                                                 <h6>{artikel.title}</h6>
