@@ -5,7 +5,7 @@ export default class CarouselItem extends Component{
         return(
             this.props.index === 0 ? (
             <div className="carousel-item active">
-                <a href="/#">
+                <a href={"/artikel/"+this.props.artikel.id}>
                     <img src={this.props.artikel.imageSrc} className="d-block w-100" alt={this.props.artikel.alt}/>
                     <div className="carousel-caption d-md-block">
                         <h5>{this.props.artikel.title}</h5>
@@ -14,7 +14,7 @@ export default class CarouselItem extends Component{
                 </a>
             </div>) : (
                 <div className="carousel-item">
-                    <a href="/#">
+                    <a href={"/artikel/"+this.props.artikel.id}>
                         <img src={this.props.artikel.imageSrc} className="d-block w-100" alt={this.props.artikel.alt}/>
                         <div className="carousel-caption d-md-block">
                             <h5>{this.props.artikel.title}</h5>

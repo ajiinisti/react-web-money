@@ -25,7 +25,6 @@ export default class Footer extends Component{
                 link:"instagram.com"
             }
         ]
-        console.log(socialMedia)
         return(
             <footer id="footer">
                 <div className="footer-top">

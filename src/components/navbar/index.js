@@ -6,7 +6,7 @@ export default class Navbar extends Component{
             <header id="header" className="fixed-top bg-navbar-fixed">
                 <div className="container d-flex align-items-center">
 
-                <h1 className="logo me-auto"><a href="index.html">Belajar Saham Bersama</a></h1>
+                <h1 className="logo me-auto"><a href="/#">Belajar Saham Bersama</a></h1>
 
                 <nav id="navbar" className="navbar">
                     <ul>
